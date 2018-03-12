@@ -396,8 +396,9 @@ body {
             top: 80px;
             display: block;
             left: 300px;
+            width: 100%;
             @media only screen and (min-width: 960px) {
-              
+              width: 100%;
             }
           }
         }
