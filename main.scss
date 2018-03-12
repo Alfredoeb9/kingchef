@@ -184,7 +184,7 @@ body {
       
       @media only screen and (min-width: 960px) {
         float: right;
-        background-image: url('../img/story00.jpg');
+        background-image: url('story00.jpg');
         height: 500px;
         width: 100%;
         width: 75%;
@@ -363,7 +363,7 @@ body {
     height: 500px;
 
     .quoteSection{
-      background: url('../img/backgroundQuote.jpg') no-repeat center center scroll; 
+      background: url('backgroundQuote.jpg') no-repeat center center scroll; 
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
