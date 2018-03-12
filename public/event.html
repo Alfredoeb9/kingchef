@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="Restaurant, Seafood, fish, crab, king, chef, dinner, lunch">
+  <meta name="description" content="Events hosted by King Chef">
+  <meta name="title" content="Menu">
+  <meta name="author" content="Alfredo Barillas">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/event.css">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant:400,500,600,700" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <title itemscope itemtype="event">Events</title>
+</head>
+<body itemscope itemtype="http://schema.org/Restaurant">
+
+  <div id='webAppRoot'></div>
+  <div class="page">
+    <div class="header">
+      <div class="logoHeader" id="logo">
+        <a href="index.html" >
+          <img class="crab" src="../img/logo.jpg" alt="KingChef Krab logo">
+        </a>
+        <h1 id="titleHeader">
+          King Chef
+        </h1>
+      </div>
+      <nav class="menuHeader">
+        <a class="specMenu" href="about.html" itemprop="description">about</a>
+        <a class="specMenu" href="team.html" itemprop="employee">team</a>
+        <a class="specMenu" href="menus.html" itemprop="menu">menu</a>
+        <a class="specMenu" href="event.html" itemprop="event">event</a>
+        <a class="specMenu" href="/#hours" itemprop="openingHours">hours</a>
+        <a class="lastMenu" href="/#reservations" itemprop="acceptsReservations">reservations</a>
+      </nav>
+    </div>
+    <div class="container" id="eventContainer">
+        <div class="eventBoard">
+            <h1 id="eventHeading"><span class="biggerHeading">Event</span> <br> Heading</h1>
+            <div class="specialEvent eventFormat">
+                <h3 class="specialHeading">The Art of Proper Pairing: Burgundy and French Charcuterie</h3>
+                <p class="eventDescription">An educational pairing series.</p>
+                <p class="eventTime">March 11 @ 5:00 pm - 7:00 pm</p>
+            </div>
+            <div class="specialEvent eventFormat">
+                <h3 class="specialHeading">Winemaker Dinner: Crown Point Vineyards</h3>
+                <p class="eventDescription">An iconic evening with winemaker Adam Henkel.</p>
+                <p class="eventTime"><br>March 22 @ 6:00 pm - 9:00 pm</p>
+            </div>
+            <div class="specialEvent eventFormat">
+                <h3 class="specialHeading">Easter Dinner at La Boucherie</h3>
+                <p class="eventDescription">An elegant Easter dinner with breathtaking city views. Chef Alessandro Serni features a three-course...</p>
+                <p class="eventTime">April 1 @ 5:00 pm - 10:00 pm</p>
+            </div>
+            <div class="specialEvent eventFormat">
+                <h3 class="specialHeading">Mother’s Day Dinner at La Boucherie</h3>
+                <p class="eventDescription">An educational pairing series.</p>
+                <p class="eventTime"><br>May 13 @ 5:00 pm - 10:00 pm</p>
+            </div>
+            <div class="specialEvent eventFormat">
+                <h3 class="specialHeading">The Art of Proper Pairing: Burgundy and French Charcuterie</h3>
+                <p class="eventDescription">Treat mom to a dinner she’ll always remember</p>
+                <p class="eventTime">May 13 @ 5:00 pm - 10:00 pm</p>
+            </div>
+            <div class="specialEvent eventFormat">
+                <h3 class="specialHeading">The Art of Proper Pairing: Burgundy and French Charcuterie</h3>
+                <p class="eventDescription">An educational pairing series.</p>
+                <p class="eventTime">May 13 @ 5:00 pm - 10:00 pm</p>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+      <div class="footerContainer">
+        <div id="locInfo" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <span itemprop="streetAddress">1435 Sesame St.</span>
+          <br>
+          <span itemprop="addressLocality">HollyWood, California 90210</span>
+          <br>
+          <span itemprop="telephone">(213) 234-1234</span>
+          <br>
+          <a href="#" itemprop="email">info@KingChef</a>
+        </div>
+        <div id="footerLogo"></div>
+        <div id="hours">
+          <time itemprop="openingHours" datetime="Fr 12:00-14:00">Lunch: Friday: 12:00PM - 2:00PM</time>
+          <br>
+          <time itemprop="openingHours" datetime="Mo-Fr 18:00-22:00">Dinner: M-F: 6:00PM - 10:00PM</time>
+          <br>
+          <time itemprop="openingHours" datetime="Sa 17:30-22:00">Sat: 5:30PM - 10:00PM</time>
+          <br>
+          <time itemprop="openingHours" datetime="Su 17:30-21:00">Sun: 5:30PM - 9:00PM</time>
+          <br>
+          <a class="yelpLogo" href="https://www.yelp.com">
+            <i class="fab fa-yelp"></i>
+          </a>
+          <a class="bookLogo" href="https://www.facebook.com">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- <script src="/js/components/vendor.js"></script> -->
+<script src="/js/components/webApp.js"></script>
+</body>
+</html>
