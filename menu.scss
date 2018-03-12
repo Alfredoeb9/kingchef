@@ -1,0 +1,236 @@
+body {
+    font-family: 'Cormorant Infant', serif!important;
+}
+
+#backgroundHeader {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+
+    #slideshow {
+        position: relative; 
+        width: 100%; 
+        height: 100%; 
+        box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  
+        .slideImg {
+          position: absolute;
+          background-size: contain;
+          width: 100%;
+          height: 100%;
+          left: 0px;
+          
+          .menuImg {
+            background-size: contain;
+            width: 100%;
+            height: 100%;
+  
+          }  
+        }
+      }
+    }
+
+    .container {
+        background-color: #fff;
+        position: absolute;
+        top: -140px;
+        text-align: center;
+        margin: 20px;
+
+        .mainmenuHeading {
+            margin: 40px 0px;
+            font-size: 3.8rem;
+            font-weight: 600;
+            // #specialHeading {
+            //     // color: rgba(253, 226, 70, 0);
+            // }
+        }
+        .menubtn {
+            font-size: 1.4rem;
+            margin-bottom: 40px;
+
+            @media only screen and (min-width: 960px) {
+                position: relative;
+                margin-bottom: 40px;
+                width: 30%;
+                cursor: pointer;
+                font-size: 1.2rem;
+                text-transform: capitalize;
+                letter-spacing: 0.1rem;
+            }
+
+            .lunchbtn {
+                color: gray;
+                border-right: 1.5px solid lightgray;
+                padding-right: 12px;
+                letter-spacing: 0.7px;
+                &:hover {
+                    color: rgba(211,211,211,0.9);
+                }
+            }
+            .dinnerbtn {
+                color: gray;
+                padding-left: 5px;
+                letter-spacing: 0.7px;
+                &:hover {
+                    color: rgba(211,211,211,0.9);
+                }
+            }
+        }
+    }
+        
+        .lunchmenu {
+            .menuContainer {
+                display: block;
+                .coursePage {
+                    .courseHeader {
+                        text-align: center;
+                        padding: 1.3rem;
+                        margin: 0;
+                        display: inline-block;
+                        font-size: 2.2rem;
+                        color: rgb(26, 26, 27);
+                        font-weight: 500;
+                        background-color: rgb(248, 247, 247);
+                        width: 100%;
+                    }
+                    .dishFruitsContainer {
+                        padding: 35px 30px 65px;
+                        background: #fff;
+                        text-align: left;
+                    }
+                    .dishContainer {
+                        padding: 35px 30px 90px;
+                        background: #fff;
+                        text-align: left;
+                        
+                        .dishArticle {
+                            width: 40%;
+                            .priceMenu {
+                                position: relative;
+                                @media only screen and (min-width: 960px) {
+                                    float: right;
+                                    position: relative;
+                                    top: -115px;
+                                }
+                            }
+                            .menuDishHeader{
+                                font-size: 1.3rem;
+                                font-weight: 500;
+                                
+                            }
+                            .menuDishDescription {
+                                margin-bottom: 1rem;
+                                padding-bottom: 2rem;
+                                border-bottom: 1px solid lightgray;
+                            }
+                        }
+                        .left {
+                            float: left;
+                        }
+                        .right {
+                            float: right;
+                        }
+                    }
+
+                }
+            }
+        }
+        .dinnermenu {
+            .menuContainer {
+                display: block;
+                .coursePage {
+                    .courseHeader {
+                        text-align: center;
+                        padding: 1.3rem;
+                        margin: 0;
+                        display: inline-block;
+                        font-size: 2.2rem;
+                        color: rgb(26, 26, 27);
+                        font-weight: 500;
+                        background-color: rgb(248, 247, 247);
+                        width: 100%;
+                    }
+                    .dishFruitsContainer {
+                        padding: 35px 30px 65px;
+                        background: #fff;
+                        text-align: left;
+                    }
+                    .dishContainer {
+                        padding: 35px 30px 90px;
+                        background: #fff;
+                        text-align: left;
+                        
+                        .dishArticle {
+                            width: 40%;
+                            .priceMenu {
+                                position: relative;
+                                // top: -115px;
+                                @media only screen and (min-width: 960px) {
+                                    float: right;
+                                    position: relative;
+                                    top: -115px;
+                                }
+                            }
+                            .menuDishHeader{
+                                font-size: 1.3rem;
+                                font-weight: 500;
+                                
+                            }
+                            .menuDishDescription {
+                                margin-bottom: 1rem;
+                                padding-bottom: 2rem;
+                                border-bottom: 1px solid lightgray;
+                            }
+                        }
+                        .left {
+                            float: left;
+                        }
+                        .right {
+                            float: right;
+                        }
+                    }
+
+                }
+            }
+        }
+    
+
+
+.menuImg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.menuImg1 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.menuImg2 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.lunchmenu {
+    display: none;
+    top: 0;
+    left: 0;
+    height: 100%;
+    &.active {
+        display: block;
+    }
+}
+
+.dinnermenu {
+    display: none;
+    top: 0;
+    left: 0;
+    height: 100%;
+    &.active {
+        display: block;
+    }
+}

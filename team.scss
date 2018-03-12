@@ -1,0 +1,768 @@
+@import "reset";
+@import "grid/grid12";
+@import "main.css";
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+#teamMain {
+    width: 100%;
+
+    @media only screen and (min-width: 960px) {
+        width: 100%;
+    }
+
+    #teamGallery {
+        width: 100%;
+        position: relative;
+
+        @media only screen and (min-width: 960px) {
+            width: 100%;
+            margin: 0px;
+        }
+
+        #left-arrow {
+            position: absolute;
+            font-size: 40px;
+            padding-left: 20px;
+            cursor: pointer;
+            bottom: 60%;
+            color: #fff;
+            background-position: 50% 30%;
+
+            @media only screen and (min-width: 960px) {
+                position: absolute;
+                color: #fff;
+                font-size: 80px;
+                padding-left: 20px;
+                cursor: pointer;
+                top: auto;
+                bottom: 40%;
+                background-position: 50% 30%;
+            }
+            @media only screen and (max-width: 435px) {
+                position: absolute;
+                font-size: 40px;
+                cursor: pointer;
+                padding-right: 20px;
+                bottom: 80%;
+                color: #fff;
+                background-position: 50% 30%;
+            }
+            @media only screen and (max-width: 370px){
+                position: absolute;
+                font-size: 40px;
+                cursor: pointer;
+                padding-left: 20px;
+                bottom: 80%;
+                color: #fff;
+                background-position: 50% 30%;
+            }
+        }
+        #right-arrow {
+            position: absolute;
+            font-size: 40px;
+            cursor: pointer;
+            right: 0;
+            padding-right: 20px;
+            bottom: 60%;
+            color: #fff;
+            background-position: 50% 30%;
+
+            @media only screen and (min-width: 960px) {
+                position: absolute;
+                font-size: 80px;
+                padding-right: 20px;
+                cursor: pointer;
+                color: #fff;
+                right: 0;
+                bottom: 40%;
+                top: auto;
+                background-position: 50% 30%;
+            }
+            @media only screen and (max-width: 435px) {
+                position: absolute;
+                font-size: 40px;
+                cursor: pointer;
+                right: 0;
+                padding-right: 20px;
+                bottom: 80%;
+                color: #fff;
+                background-position: 50% 30%;
+            }
+            @media only screen and (max-width: 370px){
+                position: absolute;
+                font-size: 40px;
+                cursor: pointer;
+                right: 0;
+                padding-right: 20px;
+                bottom: 80%;
+                color: #fff;
+                background-position: 50% 30%;
+            }
+
+        }
+
+        .firstSlide {
+            
+            position: static;
+            filter: grayscale(100%);
+            z-index: 100;
+            display: block;
+            max-width: 100%;
+            visibility: visible;
+
+            @media only screen and (min-width: 960px) {
+                position: static;
+                filter: grayscale(100%);
+                z-index: 100;
+                display: block;
+                max-width: 100%;
+                visibility: visible;
+            }
+            
+            .large {
+                width: 100%;
+
+                @media only screen and (min-width: 960px) {
+                    width: 100%;
+                }
+            }
+
+        .topSlide {
+            @media only screen and (min-width: 960px) {
+                // position: static;
+                top: 0ox;
+                left: 0px;
+                // z-index: 100;
+                opacity: 1;
+                display: block;
+            }
+        }
+
+        .slide {
+            @media only screen and (min-width: 960px) {
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 100vh;
+            }
+        }
+
+            .bio-position {
+                @media only screen and (min-width: 960px) {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    // z-index: 1000;
+                    width: 100%;
+                }
+
+                .bio-wrap {
+                    padding: 0 20px;
+                    margin: 25px 15px;
+                    // z-index: 9999;
+
+                    @media only screen and (min-width: 960px) {
+                        width: 930px;
+                        margin: 0 auto;
+                        padding: 0;
+
+                    }
+
+                    .outsideRole {
+                        display: none;
+
+                        @media only screen and (min-width: 960px) {
+                            font-family: 'Cormorant Infant', serif;
+                            display: block;
+                            padding: 30px;
+                            font-size: 2.4rem;
+                            width: 50%;
+                            color: #fff;
+                            float: left;
+                        }
+
+                        span {
+                            @media only screen and (min-width: 960px) {
+                                display: block;
+                                padding: 10px;
+                                font-weight: 700;
+                                text-transform: uppercase;
+                                font-size: 1.5rem;
+                                font-style: normal;
+                            }
+                        }
+                    }
+
+                    .bio-toggle {
+                        
+
+                        @media only screen and (min-width: 960px) {
+                            display: none;
+                            float: right;
+                            display: block;
+                            height: 30px;
+                            border-radius: 30px;
+                            font-weight: 700;
+                            font-style: italic;
+                            font-size: 1.2rem;
+                            text-align: center;
+                            cursor: pointer;
+                            margin-top: 34px;
+                            width: 30px;
+                        }
+                    }
+
+                    .reverse {
+                        color: #fff;
+                        border: 2px solid #fff;
+                        background: #000;
+                        display: none;
+
+                        @media only screen and (min-width: 960px) {
+                            display: block;
+                            color: #fff;
+                            border: 2px solid #fff;
+                            background: #000;
+                        }
+                    }
+
+                    .bio-container {
+                        display: block;
+                        @media only screen and (min-width: 960px) {
+                            display: none;
+                            font-family: 'Cormorant Infant', serif;
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                        }
+                        &.active {
+                            display: block;
+                        }
+
+                        .bio {
+                            @media only screen and (min-width: 960px) {
+                                box-sizing: border-box;
+                                margin: 0 auto;
+                                background: rgba(#333, 0.92);
+                                height: 100%;
+                                width: 100%;
+                            }
+
+                            .bio-text {
+                                padding-bottom: 34px;
+                                text-align: justify;
+
+                                @media screen and (min-width: 960px) {
+                                    margin: 0 auto;
+                                    width: 70%;
+                                    top: 15%;
+                                    left: 15%;
+                                    position: absolute;
+                                }
+
+                                    .small {
+                                        background-image: url('http://educationcareerarticles.com/wp-content/uploads/2014/07/Chef9.jpg');
+                                        background-position: center;
+                                        
+                                        @media screen and (min-width: 960px) {
+                                            width: 200px;
+                                            height: 300px;
+                                            margin-right: 30px;
+                                            background-repeat: no-repeat;
+                                            background-size: cover;
+                                            float: left;
+                                        }
+                                        
+                                    }
+
+                                    .close-button {
+
+                                        @media only screen and (min-width: 960px) {
+                                            float: right;
+                                            display: block;
+                                            height: 30px;
+                                            border-radius: 30px;
+                                            font-weight: 700;
+                                            font-style: italic;
+                                            font-size: 1.2rem;
+                                            text-align: center;
+                                            cursor: pointer;
+                                            margin-top: 34px;
+                                            width: 30px;
+                                        }
+                                    }
+                                    .bio-war {
+                                        font-family: 'Cormorant Infant', serif;
+
+                                        .bioHeading {
+                                            font-size: 2.4rem;
+                                            font-weight: 700;
+
+                                            @media only screen and (min-width: 960px) {
+                                                color: #fff;
+                                                margin-bottom: 15px;
+                                                font-size: 2.7rem;
+                                                font-weight: 700;
+                                            }
+                                        }
+
+                                        #bioRole {
+                                            font-size: 1.4rem;
+                                            padding-bottom: 30px;
+                                            font-weight: 500;
+                                            font-style: italic;
+
+                                            @media only screen and (min-width: 960px) {
+                                                color: #fff;
+                                                font-size: 1.5rem;
+                                                font-weight: 600;
+                                                padding-bottom: 30px;
+                                            }
+                                        }
+
+                                        .bioDescription{
+                                            font-size: 1.2rem;
+
+                                            @media only screen and (min-width: 960px) {
+                                                color: #fff;
+                                                font-size: 1.1rem;
+                                                font-weight: 400;
+                                                padding-left: 20px;
+                                                border-left: 4px solid #fff;
+                                                margin-left: 15rem;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        
+
+                .slide2 {
+  
+                    .slide  {
+                        @media only screen and (min-width: 960px) {
+                            background-size: cover;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            height: 100vh;
+                        }
+                    }
+                    .large {
+                        width: 100%;
+                        @media only screen and (min-width: 960px) {
+                            width: 100%;
+                        }
+                    }
+                    .bio-position {
+
+                        @media only screen and (min-width: 960px) {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            z-index: 1000;
+                            width: 100%;
+                        }
+        
+                        .bio-wrap {
+                            padding: 0 20px;
+                            margin: 25px 15px;
+                            z-index: 9999;
+        
+                            @media only screen and (min-width: 960px) {
+                                width: 930px;
+                                margin: 0 auto;
+                                padding: 0;
+        
+                            }
+        
+                            .outsideRole {
+                                display: none;
+
+                                @media only screen and (min-width: 960px) {
+                                    font-family: 'Cormorant Infant', serif;
+                                    display: block;
+                                    padding: 30px;
+                                    font-size: 2.4rem;
+                                    width: 50%;
+                                    color: #fff;
+                                    float: left;
+                                }
+        
+                                span {
+                                    @media only screen and (min-width: 960px) {
+                                        display: block;
+                                        padding: 10px;
+                                        font-weight: 700;
+                                        text-transform: uppercase;
+                                        font-size: 1.5rem;
+                                        font-style: normal;
+                                    }
+                                }
+                            }
+        
+                            .bio-toggle {
+                                
+        
+                                @media only screen and (min-width: 960px) {
+                                    display: none;
+                                    float: right;
+                                    display: block;
+                                    height: 30px;
+                                    border-radius: 30px;
+                                    font-weight: 700;
+                                    font-style: italic;
+                                    font-size: 1.2rem;
+                                    text-align: center;
+                                    cursor: pointer;
+                                    margin-top: 34px;
+                                    width: 30px;
+                                }
+                            }
+        
+                            .reverse {
+                                color: #fff;
+                                border: 2px solid #fff;
+                                background: #000;
+                                display: none;
+        
+                                @media only screen and (min-width: 960px) {
+                                    display: block;
+                                    color: #fff;
+                                    border: 2px solid #fff;
+                                    background: #000;
+                                }
+                            }
+        
+                            .bio-container {
+                                display: block;
+                                @media only screen and (min-width: 960px) {
+                                    display: none;
+                                    font-family: 'Cormorant Infant', serif;
+                                    position: fixed;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                                &.active {
+                                    display: block;
+                                }
+        
+                                .bio {
+                                    @media only screen and (min-width: 960px) {
+                                        box-sizing: border-box;
+                                        margin: 0 auto;
+                                        background: rgba(#333, 0.92);
+                                        height: 100%;
+                                        width: 100%;
+                                    }
+        
+                                    .bio-text {
+                                        padding-bottom: 34px;
+                                        text-align: justify;
+        
+                                        @media screen and (min-width: 960px) {
+                                            margin: 0 auto;
+                                            width: 70%;
+                                            top: 15%;
+                                            left: 15%;
+                                            position: absolute;
+                                        }
+        
+                                            .small {
+                                                background-image: url('../img/host.jpeg');
+                                                
+                                                @media screen and (min-width: 960px) {
+                                                    width: 200px;
+                                                    height: 300px;
+                                                    margin-right: 30px;
+                                                    background-repeat: no-repeat;
+                                                    background-size: cover;
+                                                    background-position: center;
+                                                    float: left;
+                                                }
+                                                
+                                            }
+        
+                                            .close-button {
+        
+                                                @media only screen and (min-width: 960px) {
+                                                    float: right;
+                                                    display: block;
+                                                    height: 30px;
+                                                    border-radius: 30px;
+                                                    font-weight: 700;
+                                                    font-style: italic;
+                                                    font-size: 1.2rem;
+                                                    text-align: center;
+                                                    cursor: pointer;
+                                                    margin-top: 34px;
+                                                    width: 30px;
+                                                }
+                                            }
+                                            .bio-war {
+                                                font-family: 'Cormorant Infant', serif;
+                                                .bioHeading {
+                                                    font-size: 2.2rem;
+                                                    font-weight: 700;
+                                                    @media only screen and (min-width: 960px) {
+                                                        color: #fff;
+                                                        margin-bottom: 15px;
+                                                        font-size: 2.7rem;
+                                                        font-weight: 700;
+                                                    }
+                                                }
+        
+                                                #bioRole {
+                                                    font-size: 1.4rem;
+                                                    padding-bottom: 30px;
+                                                    font-weight: 500;
+                                                    font-style: italic;
+                                                    @media only screen and (min-width: 960px) {
+                                                        color: #fff;
+                                                        font-size: 1.5rem;
+                                                        font-weight: 600;
+                                                        padding-bottom: 30px;
+                                                    }
+                                                }
+        
+                                                .bioDescription{
+                                                    font-size: 1.2rem;
+                                                    @media only screen and (min-width: 960px) {
+                                                        color: #fff;
+                                                        font-size: 1.1rem;
+                                                        font-weight: 400;
+                                                        padding-left: 20px;
+                                                        border-left: 4px solid #fff;
+                                                        margin-left: 15rem;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                }
+                .slide3 {
+                    .slide  {
+                        @media only screen and (min-width: 960px) {
+                            background-size: cover;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            height: 100vh;
+                        }
+                    }
+                    .large {
+                        width: 100%;
+                        @media only screen and (min-width: 960px) {
+                            width: 100%;
+                        }
+                    }
+                    .bio-position {
+
+                        @media only screen and (min-width: 960px) {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            z-index: 1000;
+                            width: 100%;
+                        }
+        
+                        .bio-wrap {
+                            padding: 0 20px;
+                            margin: 25px 15px;
+                            z-index: 9999;
+        
+                            @media only screen and (min-width: 960px) {
+                                width: 930px;
+                                margin: 0 auto;
+                                padding: 0;
+        
+                            }
+        
+                            .outsideRole {
+                                display: none;
+
+                                @media only screen and (min-width: 960px) {
+                                    font-family: 'Cormorant Infant', serif;
+                                    display: block;
+                                    padding: 30px;
+                                    font-size: 2.4rem;
+                                    width: 50%;
+                                    color: #fff;
+                                    float: left;
+                                }
+        
+                                span {
+                                    @media only screen and (min-width: 960px) {
+                                        display: block;
+                                        padding: 10px;
+                                        font-weight: 700;
+                                        text-transform: uppercase;
+                                        font-size: 1.5rem;
+                                        font-style: normal;
+                                    }
+                                }
+                            }
+        
+                            .bio-toggle {
+                                
+        
+                                @media only screen and (min-width: 960px) {
+                                    display: none;
+                                    float: right;
+                                    display: block;
+                                    height: 30px;
+                                    border-radius: 30px;
+                                    font-weight: 700;
+                                    font-style: italic;
+                                    font-size: 1.2rem;
+                                    text-align: center;
+                                    cursor: pointer;
+                                    margin-top: 34px;
+                                    width: 30px;
+                                }
+                            }
+        
+                            .reverse {
+                                color: #fff;
+                                border: 2px solid #fff;
+                                background: #000;
+                                display: none;
+        
+                                @media only screen and (min-width: 960px) {
+                                    display: block;
+                                    color: #fff;
+                                    border: 2px solid #fff;
+                                    background: #000;
+                                }
+                            }
+        
+                            .bio-container {
+                                display: block;
+                                @media only screen and (min-width: 960px) {
+                                    display: none;
+                                    font-family: 'Cormorant Infant', serif;
+                                    position: fixed;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                                &.active {
+                                    display: block;
+                                }
+        
+                                .bio {
+                                    // display: block;
+                                    @media only screen and (min-width: 960px) {
+                                        box-sizing: border-box;
+                                        margin: 0 auto;
+                                        background: rgba(#333, 0.92);
+                                        height: 100%;
+                                        width: 100%;
+                                    }
+        
+                                    .bio-text {
+                                        padding-bottom: 34px;
+                                        text-align: justify;
+        
+                                        @media screen and (min-width: 960px) {
+                                            margin: 0 auto;
+                                            width: 70%;
+                                            top: 15%;
+                                            left: 15%;
+                                            position: absolute;
+                                        }
+        
+                                        .small {
+                                            background-image: url('../img/pasteryChef.jpeg');
+                                            
+                                            @media screen and (min-width: 960px) {
+                                                width: 200px;
+                                                height: 300px;
+                                                margin-right: 30px;
+                                                background-repeat: no-repeat;
+                                                background-size: cover;
+                                                background-position: center;
+                                                float: left;
+                                            }
+                                            
+                                        }
+        
+                                            .close-button {
+        
+                                                @media only screen and (min-width: 960px) {
+                                                    float: right;
+                                                    display: block;
+                                                    height: 30px;
+                                                    border-radius: 30px;
+                                                    font-weight: 700;
+                                                    font-style: italic;
+                                                    font-size: 1.2rem;
+                                                    text-align: center;
+                                                    cursor: pointer;
+                                                    margin-top: 34px;
+                                                    width: 30px;
+                                                }
+                                            }
+                                            .bio-war {
+                                                font-family: 'Cormorant Infant', serif;
+                                                .bioHeading {
+                                                    font-size: 2.4rem;
+                                                    font-weight: 700;
+                                                    @media only screen and (min-width: 960px) {
+                                                        color: #fff;
+                                                        margin-bottom: 15px;
+                                                        font-size: 2.7rem;
+                                                        font-weight: 700;
+                                                    }
+                                                }
+        
+                                                #bioRole {
+                                                    font-size: 1.4rem;
+                                                    padding-bottom: 30px;
+                                                    font-weight: 500;
+                                                    font-style: italic;
+                                                    @media only screen and (min-width: 960px) {
+                                                        color: #fff;
+                                                        font-size: 1.5rem;
+                                                        font-weight: 600;
+                                                        padding-bottom: 30px;
+                                                    }
+                                                }
+        
+                                                .bioDescription{
+                                                    font-size: 1.2rem;
+                                                    @media only screen and (min-width: 960px) {
+                                                        color: #fff;
+                                                        font-size: 1.1rem;
+                                                        font-weight: 400;
+                                                        padding-left: 20px;
+                                                        border-left: 4px solid #fff;
+                                                        margin-left: 15rem;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                }
+            }
+        }

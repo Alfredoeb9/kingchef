@@ -1,0 +1,76 @@
+body {
+    font-family: 'Cormorant Infant', serif!important;
+}
+
+
+
+.container{
+    @media only screen and (min-width: 960px) {
+        height: auto;
+        width: 100%;
+        margin-bottom: 2.2rem;
+    }
+    .eventBoard {
+        font-family: 'Cormorant Infant', serif;
+
+        @media only screen and (min-width: 960px) {
+            font-family: 'Cormorant Infant', serif;
+            height: 100%;
+            width: 100%;
+            margin-top: 2rem;
+        }
+        #eventHeading {
+            margin-bottom: 2rem;
+            text-align: center;
+            font-size: 3.4rem;
+
+            @media only screen and (min-width: 960px) {
+                text-align: center;
+                font-size: 3.5rem;
+                font-weight: 500;
+                margin: 0px;
+                margin-bottom: 2rem;
+                letter-spacing: 1px;
+            }
+             .biggerHeading {
+                @media only screen and (min-width: 960px) {
+                    font-size: 3.8rem;
+                }
+            }
+        }
+    }
+    .specialEvent {
+        background-color: rgba(250, 248, 223, 0.748);
+        height: 100%;
+        padding: 22px;
+        @media only screen and (min-width: 960px) {
+            display: inline-block;
+            width: 33%;
+            height: 100%;
+            padding: 22px;
+            background-color: rgba(250, 248, 223, 0.748);
+        }
+        &.eventFormat {
+            margin-bottom: 1rem;
+            @media only screen and (min-width: 960px) {
+                margin-bottom: 1rem;
+                height: 170px;
+                vertical-align: top;
+            }
+        }
+        .specialHeading {
+            text-align: center;
+            @media only screen and (min-width: 960px) {
+            text-align: center;
+            font-size: 1.5rem;
+            }
+        }
+        .eventDescription {
+            text-align: center;
+        }
+        .eventTime {
+            text-align: center;
+            margin-bottom: 0;
+        }
+    }
+}

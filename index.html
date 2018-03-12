@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="Restaurant, Seafood, fish, crab, king, chef, dinner, lunch">
+  <meta name="description" content="King Chef is one of the worlds best seafood resturants out in Los Angeles">
+  <meta name="title" content="Menu">
+  <meta name="author" content="Alfredo Barillas">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/about.css">
+  <link rel="stylesheet" href="/css/jquery.datetimepicker.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant:400,500,600,700" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <title itemscope itemtype="http://schema.org/Restaurant">King Chef</title>
+</head>
+<body itemscope itemtype="http://schema.org/Restaurant">
+
+  <div id='webAppRoot'></div>
+  <div class="page">
+    <div class="header">
+      <div class="logoHeader" id="logo">
+        <a href="index.html" >
+          <img class="crab" src="../img/logo.jpg" alt="KingChef Krab logo">
+        </a>
+        <h1 id="titleHeader">
+          King Chef
+        </h1>
+      </div>
+      <nav class="menuHeader">
+        <a class="specMenu" href="about.html" itemprop="description">about</a>
+        <a class="specMenu" href="team.html" itemprop="employee">team</a>
+        <a class="specMenu" href="menus.html" itemprop="menu">menu</a>
+        <a class="specMenu" href="event.html" itemprop="event">event</a>
+        <a class="specMenu" href="/#hours" itemprop="openingHours">hours</a>
+        <a class="lastMenu" href="/#reservations" itemprop="acceptsReservations">reservations</a>
+      </nav>
+    </div>
+    <div class="mainContent">
+      <div id="slideshow">
+        <div class="slideImg">
+          <img class="mainImage" src="http://2.bp.blogspot.com/-CtAlhqfM7hs/UclEnhgyjOI/AAAAAAAAAOo/iD6jZPHlXj4/s1600/food-presentaion+in+plate.gif">
+        </div>
+        <div class="slideImg">
+          <img class="mainImage" src="https://irp-cdn.multiscreensite.com/c835ce8a/dms3rep/multi/desktop/575af731997f4c53e52e457abe268e15_m-480x450.jpg">
+        </div>
+        <div class="slideImg">
+          <img class="mainImage" src="http://futuresfoodproducts.ca/online/Fish_Seafood_Entrees/files/rolled-sole-fillet.jpg">
+        </div>
+      </div>
+    </div>
+    <section class="container">
+      <div class="storyContent"></div>
+      <article class="storySec">
+        <h2 id="Heading"><span id="centerHeading">Discover</span></span><br>Our Story</h2>
+        <p id="storyDescription">Cables the son of original X-Man Scott Summers and the clone of Jean Grey who grew up in a war-torn future ruled by Apocalypse. 
+          Like a sci fi Lone Wolf and Cub, the new Cable series is packed with action, adventure, humor and everything else an X-Men fan could ask for.
+        </p>
+      </article>
+    </section>
+
+    <section class="container" itemscope itemtype="http://schema.org/acceptsReservations">
+      <div id="reservations"></div>
+      <div class="reservationContent">
+        <h2 id="Heading"><span id="centerHeading">Make</span><br> A reservation</h2>
+        <form id="reservationForm" action="https://www.opentable.com/los-angeles-restaurants">
+          <div class="calanderForm">
+            <i class="far fa-calendar-alt"></i>
+            <input id="datePicker" type="text"/>
+          </div>
+
+          <div class="timeForm">
+            <i class="far fa-clock"></i>
+            <input id="datetimepicker2" type="text">
+          </div>
+          <div class="partySize">
+            <a class="selectLabel" tabindex="-1">
+              <i class="far fa-user"></i>
+              <select name="partySelection" id="partySelection">
+              <option value="1">1 person</option>
+              <option value="2">2 people</option>
+              <option value="3">3 people</option>
+              <option value="4">4 people</option>
+              <option value="5">5 people</option>
+            </select>
+            </a>
+          </div>
+          <br>
+          <button type="submit" id="reservationButton" href="https://www.opentable.com/los-angeles-restaurants">Find a table</button>
+        </form>
+      </div>
+    </section>
+    <section class="quoteContainer">
+        <div class="quoteSection">
+          <div id="quoteContainer">
+            <p id="quote">"This is the best place ever. Highly recommended"<span id="quoteWriter"> -Tony Stark</span></p>
+          </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+      <div class="footerContainer">
+        <div id="locInfo" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <span itemprop="streetAddress">1435 Sesame St.</span>
+          <br>
+          <span itemprop="addressLocality">HollyWood, California 90210</span>
+          <br>
+          <span itemprop="telephone">(213) 234-1234</span>
+          <br>
+          <a href="#" itemprop="email">info@KingChef</a>
+        </div>
+        <div id="footerLogo"></div>
+        <div id="hours">
+          <time itemprop="openingHours" datetime="Fr 12:00-14:00">Lunch: Friday: 12:00PM - 2:00PM</time>
+          <br>
+          <time itemprop="openingHours" datetime="Mo-Fr 18:00-22:00">Dinner: M-F: 6:00PM - 10:00PM</time>
+          <br>
+          <time itemprop="openingHours" datetime="Sa 17:30-22:00">Sat: 5:30PM - 10:00PM</time>
+          <br>
+          <time itemprop="openingHours" datetime="Su 17:30-21:00">Sun: 5:30PM - 9:00PM</time>
+          <br>
+          <a class="yelpLogo" href="https://www.yelp.com">
+            <i class="fab fa-yelp"></i>
+          </a>
+          <a class="bookLogo" href="https://www.facebook.com">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="/js/components/jquery.datetimepicker.full.min.js"></script>
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> -->
+<script src="/js/components/mainSlideShow.js"></script>
+<script src="/js/components/vendor.js"></script>
+<!-- <script src="/js/components/webApp.js"></script> -->
+</body>
+</html>

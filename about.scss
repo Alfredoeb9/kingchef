@@ -1,0 +1,76 @@
+@import "reset";
+@import "grid/grid12";
+@import "main.css";
+
+
+body {
+    font-family: 'Cormorant Infant', serif;
+
+}
+.page {
+    background: transparent;
+    overflow: hidden;
+    
+    .bkImage {
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+        // left: 80px;
+        position: relative;
+        background-size: 600px, contain;
+        background-repeat: no-repeat;
+        background-position: 1% 50%;
+        background-attachment: fixed;
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/8c/Lobster_%28PSF%29.png");
+    }
+    
+    #aboutContent {
+        font-family: 'Cormorant Infant', serif;
+        height: auto;
+        max-width: 920px;
+        width: 100%;
+        margin: 0 auto;
+
+        @media only screen and (min-width: 960px) {
+            width: 920px;
+            height: auto;
+        }
+
+        #about {
+            background: rgba(255, 255, 255,0.9);
+
+            @media only screen and (min-width: 960px) {
+                max-width: 100%;               
+                margin: 50px 0 50px 250px;
+                padding: 0 0 50px 50px;
+                border-left: 1px solid #000;
+            }
+            #aboutHeading {
+                margin: 0 0 1.5em;
+                padding: 0 0 0.5em;
+                
+                font-size: 1.2em;
+
+                #aboutTop {
+                    font-size: 1.5em;
+                    font-weight: 600;
+                    font-style: italic;
+                    text-indent: 0;
+                    margin: 0 0.5em;
+                    border-bottom: 2px solid #000;
+                    #quoteChef {
+                        font-size: 1.3rem;
+                        padding-left: 2em;
+                    }
+                }
+            }
+            #aboutDescription {
+                .description {
+                    text-indent: 2em;
+                    font-size: 1.1rem;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
