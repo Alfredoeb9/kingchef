@@ -364,7 +364,7 @@ body {
     height: 500px;
 
     .quoteSection{
-      background: url('backgroundQuote.jpg') no-repeat center center scroll; 
+      background-image: url('backgroundQuote.jpg') no-repeat center center scroll; 
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
