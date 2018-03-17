@@ -413,10 +413,7 @@ body {
     background-color: black;
     text-align: center;
     width: 100%;
-    &:hover {
-      height: 300px;
-      font-size: 1.1rem;
-    }
+    
     @media only screen and (min-width: 960px) {
       position: absolute;
       bottom: 0;
@@ -426,7 +423,10 @@ body {
       margin: 0 auto;
       padding: 0;
       transition: all .4s ease-in-out;
-     
+      &:hover {
+        height: 300px;
+        font-size: 1.1rem;
+          }
     }
     .footerContainer {
       text-align: center;
