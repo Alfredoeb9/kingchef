@@ -413,6 +413,9 @@ body {
     background-color: black;
     text-align: center;
     width: 100%;
+    &:hover {
+      display: none;
+    }
     
     @media only screen and (min-width: 960px) {
       position: absolute;
